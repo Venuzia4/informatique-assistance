@@ -50,7 +50,7 @@
 		height="300px">
 		<div>
 			<h3>Agenda</h3>
-		<iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FParis&showTitle=0&src=dmJhYm9uZ3VpbWFiaWthQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZnIuZnJlbmNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+		<iframe class="agenda" src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=Europe%2FParis&showTitle=0&src=dmJhYm9uZ3VpbWFiaWthQGdtYWlsLmNvbQ&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=ZnIuZnJlbmNoI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&color=%23039BE5&color=%2333B679&color=%230B8043" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
     </div>
 	</section>
 	<section id="tarifs">
@@ -71,26 +71,26 @@
 	<div class="hello">
 <div class="Form">
 <h3>Formulaire de contact</h3>
-<form id="contactForm">
+<form  methode="POST" name="test" onsubmit="return false;"id="contactForm">
         <label for="name">Name</label><br />
         <input
           type="text"
           id="name"
           name="name"
-          value="Entrez votre nom"
+          placeholder="Entrez votre nom"
         /><br />
         <label for="email">Email</label><br />
         <input
           type="text"
           id="email"
           name="email"
-          value="Entrez votre email"
+          placeholder="Entrez votre email"
         /><br /><br />
         <label for="message">Message:</label><br />
         <textarea id="message" name="message"></textarea>
         <br />
         <br />
-        <input type="submit" value="Envoyer" />
+        <button class="btn" type="submit">Envoyer</button>
       </form>
    	</div>
    	<div class="info">
@@ -107,6 +107,7 @@
 	</div>
 
 	</footer>
+	<script src="script.js"></script>
 	
 </body>
 </html>
